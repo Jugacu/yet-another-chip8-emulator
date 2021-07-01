@@ -9,11 +9,12 @@ use crate::core::memory::Memory;
 use crate::core::cpu::CPU;
 use crate::core::timer::Timer;
 use crate::core::keyboard::Keyboard;
+use std::sync::{Arc, Mutex};
 
 pub struct Chip8 {
     memory: Memory,
     cpu: CPU,
-    timer: Timer,
+    timer: Arc<Mutex<Timer>>,
     keyboard: Keyboard
 }
 
