@@ -1,4 +1,6 @@
-use chip_8::chip8::chip8::Chip8;
+pub mod core;
+
+use core::Chip8;
 use console_engine::{pixel, Color, KeyCode, MouseButton};
 
 fn main() {
