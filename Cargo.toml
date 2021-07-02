@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 console_engine = "2.0.1"
+spin_sleep = "1.0.0"

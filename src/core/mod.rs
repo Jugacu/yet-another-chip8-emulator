@@ -3,13 +3,13 @@ pub mod cpu;
 pub mod timer;
 pub mod keyboard;
 
+use std::sync::{Arc, Mutex};
 use console_engine::ConsoleEngine;
 
 use crate::core::memory::Memory;
 use crate::core::cpu::CPU;
 use crate::core::timer::Timer;
 use crate::core::keyboard::Keyboard;
-use std::sync::{Arc, Mutex};
 
 pub struct Chip8 {
     memory: Memory,
